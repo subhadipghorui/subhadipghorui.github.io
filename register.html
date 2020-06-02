@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourm</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- style -->
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.myform{
+    width: 100%;
+    margin: 2rem auto;
+    padding: 4rem 1.5rem;
+    background: #fff;
+    
+    box-shadow: 0px 0px 30px #818181;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="text-center mt-5">Register</h1>
+            <p class="text-center">If Allow GPS Permission to Send Geo Location</p>
+            <div class="myform">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSerTcIbF0wECynTOvGM6iIaYV7YGPy3dPzlycS6vZui1GHkng/formResponse" method="POST" target="_self" id="mG61Hd">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Full Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="entry.1409969189" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail2">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
+                            placeholder="Enter email" name="entry.273554208">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone" name="entry.1771215486">
+                    </div>
+                    <div class="form-group">
+                        <label for="university">University Name</label>
+                        <input type="text" class="form-control" id="university" placeholder="University Name" name="entry.1847069326">
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Current Status</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entry.2062310849" id="gridRadios1"
+                                        value="UG" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        UG
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entry.2062310849" id="gridRadios2"
+                                        value="PG">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        PG
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entry.2062310849" id="gridRadios2"
+                                        value="Scholar">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Scholar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entry.2062310849" id="gridRadios2"
+                                        value="Professional Worker">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Professional Worker
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="lat">Latitude</label>
+                            <input type="text" class="form-control" id="lat" placeholder="Latitude" name="entry.1523438402">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="long">Longititude</label>
+                            <input type="text" class="form-control" id="long" placeholder="Longititude" name="entry.1228516323">
+                        </div>
+                        <button type="button" onclick="getCoord()" class="btn btn-info mb-4">Geolocate</button>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Js Script For GeoLocation -->
+    <script>
+        function getCoord() {
+            var lat = document.getElementById("lat");
+            var long = document.getElementById("long");
+            alert("Got Location");
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition((position) => {
+                lat.value = position.coords.latitude;
+                long.value = position.coords.longitude;
+            });
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                }
+            }
+            getLocation();
+        }
+    </script>
+</body>
+
+</html>
