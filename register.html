@@ -18,48 +18,53 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- style -->
 <style>
-        * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .myform{
+    max-width: 40rem;
     margin: 2rem auto;
-    padding: 5rem 2.5rem;
+    padding: 5rem 2rem;
     background: #fff;
     box-shadow: 0px 0px 80px #c0c0c0;
     border-radius: 10px;
 }
-
-
+.ol{
+    /* outline: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #333; */
+}
 </style>
 </head>
 
 <body>
     <div class="container">
-        <div>
+
             <h1 class="text-center mt-5">Register</h1>
             <p class="text-center">If Allow GPS Permission to Send Geo Location</p>
-            <div class="myform mx-md-5 px-md-5">
+            <div class="myform px-md-5">
                 <div class="wrapper">
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSerTcIbF0wECynTOvGM6iIaYV7YGPy3dPzlycS6vZui1GHkng/formResponse" method="POST" target="_self" id="mG61Hd">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Full Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" name="entry.1409969189" placeholder="Enter Name">
+                        <input type="text" class="form-control ol" id="exampleInputEmail1" name="entry.1409969189" placeholder="Enter Name">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail2">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
+                        <input type="email" class="form-control .ol" id="exampleInputEmail2" aria-describedby="emailHelp"
                             placeholder="Enter Email" name="entry.273554208">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone" name="entry.1771215486">
+                        <input type="tel" class="form-control .ol" id="phone" placeholder="Enter Phone" name="entry.1771215486">
                     </div>
                     <div class="form-group">
                         <label for="university">Institute Name</label>
-                        <input type="text" class="form-control" id="university" placeholder="Institute Name" name="entry.1847069326">
+                        <input type="text" class="form-control .ol" id="university" placeholder="Institute Name" name="entry.1847069326">
                     </div>
                     <fieldset class="form-group">
                         <div class="row">
@@ -130,7 +135,6 @@
                 </form>
             </div>
             </div>
-        </div>
     </div>
 
 
