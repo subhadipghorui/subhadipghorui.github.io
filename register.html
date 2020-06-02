@@ -17,8 +17,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- style -->
-
-    <style>
+<style>
         * {
     margin: 0;
     padding: 0;
@@ -26,22 +25,27 @@
 }
 
 .myform{
-    width: 100%;
+    width: 60%;
     margin: 2rem auto;
-    padding: 4rem 1.5rem;
+    padding: 5rem 2.5rem;
     background: #fff;
-    
-    box-shadow: 0px 0px 30px #818181;
+    box-shadow: 0px 0px 80px #c0c0c0;
+    border-radius: 10px;
 }
-    </style>
+
+.wrapper{
+    margin: 0 2rem;
+}
+</style>
 </head>
 
 <body>
     <div class="container">
         <div>
             <h1 class="text-center mt-5">Register</h1>
-            <p class="text-center">Please Allow GPS Permission to Send Geo Location</p>
+            <p class="text-center">If Allow GPS Permission to Send Geo Location</p>
             <div class="myform">
+                <div class="wrapper">
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSerTcIbF0wECynTOvGM6iIaYV7YGPy3dPzlycS6vZui1GHkng/formResponse" method="POST" target="_self" id="mG61Hd">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Full Name</label>
@@ -50,15 +54,15 @@
                     <div class="form-group">
                         <label for="exampleInputEmail2">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
-                            placeholder="Enter email" name="entry.273554208">
+                            placeholder="Enter Email" name="entry.273554208">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone</label>
                         <input type="tel" class="form-control" id="phone" placeholder="Enter Phone" name="entry.1771215486">
                     </div>
                     <div class="form-group">
-                        <label for="university">University Name</label>
-                        <input type="text" class="form-control" id="university" placeholder="University Name" name="entry.1847069326">
+                        <label for="university">Institute Name</label>
+                        <input type="text" class="form-control" id="university" placeholder="Institute Name" name="entry.1847069326">
                     </div>
                     <fieldset class="form-group">
                         <div class="row">
@@ -87,15 +91,35 @@
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="entry.2062310849" id="gridRadios2"
+                                        value="Faculty Member">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Faculty Member
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entry.2062310849" id="gridRadios2"
                                         value="Professional Worker">
                                     <label class="form-check-label" for="gridRadios2">
                                         Professional Worker
                                     </label>
                                 </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entry.2062310849" id="gridRadios2"
+                                        value="Other">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Other
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
+
                     <div class="form-row">
+                        <div class="col-md-12">
+                            <label for="golocate" class="text-danger">* Please Click on the Geolocate Button to get your location. <mark>(No need to enter it mannualy)</mark></label>
+                            <br>
+                            <button type="button" onclick="getCoord()" class="btn btn-info mb-3">Geolocate</button>
+                        </div>
                         <div class="form-group col-md-6">
                             <label for="lat">Latitude</label>
                             <input type="text" class="form-control" id="lat" placeholder="Latitude" name="entry.1523438402">
@@ -104,10 +128,10 @@
                             <label for="long">Longititude</label>
                             <input type="text" class="form-control" id="long" placeholder="Longititude" name="entry.1228516323">
                         </div>
-                        <button type="button" onclick="getCoord()" class="btn btn-info mb-4">Geolocate</button>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
                 </form>
+            </div>
             </div>
         </div>
     </div>
