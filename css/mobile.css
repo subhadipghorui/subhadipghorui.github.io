@@ -40,7 +40,8 @@
     margin: 0 2px;
     /* background: #00B0FF; */
     border-radius: 50px;
-    border: #3333ee solid 1px;
+    border: #00B0FF solid 1px;
+
 }
 .nav-container ul li a:hover{
     background: #00B0FF;
@@ -133,27 +134,7 @@
 
 /* Section: Contact */
 
-#contact .container {
-  display: block;
-  padding-top: 8rem;
-  }
 
-#contact .container div {
-    width: 100%;
-    
-}
-#contact .container .address{
-    padding: 2rem;
-}
-#contact .container .contact-form {
-    padding: 1rem;
-}
-
-#contact .container .contact-form input,
-#contact .container .contact-form textarea {
-    width: 90%;
-    padding: 0.5rem;
-  }
 
   /* footer */
   #main-footer .footer-content {

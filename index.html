@@ -1,176 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Subhadip Ghorui</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
-   
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
     <script src="./javascript/main.js" type="text/javascript"></script>
 </head>
+
 <body id="home">
-<nav id="navbar">
-    <!-- Header Logo & menus -->
-    <div class="nav-container">
-        <h1 class="logo m-heading">Subhadip Ghorui</h1>
-        <div class="menu">  
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#front-end">Skills</a></li>
-                <!-- <li><a href="#projects">Projects</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>  
-</div>
-</nav>
+    <nav id="navbar" class="">
+        <!-- Header Logo & menus -->
+        <div class="nav-container">
+            <h1 class="logo m-heading"><a href="#home">Subhadip Ghorui</a></h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Wall -->
     <header id="showcase">
-    <div class="showcase-container">
-        
-        <div class="wall-photo">
-            <img src="./img/2222.png" alt="img">
+        <div class="showcase-container">
+
+            <div class="wall-photo">
+                <img src="./img/2222.png" alt="img" class="wall-img">
+            </div>
+            <div class="wall-text">
+                <h2 class="l-heading">Hi!</h2><br>
+                <h1 class="m-heading">I am <span class="primary-color">Subhadip </span>Ghorui</h1>
+                <h3>I am a Web Application developer</h3>
+                <div class="line"></div>
+                <a href="https://myiotlab.in" target="_blank" class="btn mt-3">Visit my blog</a>
+                <a href="https://www.youtube.com/channel/UC-cY0xIcJoVgzMIrlf5d6Ag" target="_blank" class="btn mt-3" style="background: red">Youtube channel</a>
+            </div>
+
+
         </div>
-        <div class="wall-text">
-            <h2 class="l-heading">Welcome to my site</h2><br>
-            <h1 class="m-heading">My name is <span class="primary-color">Subhadip </span>Ghorui</h1>
-            <h3>I am a Web developer</h3>
-            <div class="line"></div>
-        </div>
-    
-    
-    </div>
     </header>
 
+
     <!-- About me  -->
-    <section id="about">
-        <div class="about-container">
-           <div class="img-left"></div> 
-           <div class="text-right p-2 bg-dark">
-               <h1 class="m-heading center">About Me</h1>
-            <p>I lived in Arambagh. I am currently doing graduation.</p>
-            <h3>Educational Qualifications:</h3>
-            <ul class="list">
-                <li>BSC graduate in Environmental Science</li>
-                <li>Appearing M.Sc</li>
-                <li>Learning Back-end Web development.</li>
-            </ul>
-        </div> 
+    <section id="about" class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row bd mt-1 mb-5">
+                <h1 class="mx-auto my-5">About Me</h1>
+            </div>
+            <div class="row about pb-5">
+                <div class="col-md-5 about-img bd"></div>
+                <div class="col-md-7 p-3  bd">
+                    <div class="about-text mx-auto text-center ">
+                        <h1 class="my-4 pt-5">Education</h1>
+                        <ul>
+                            <li>2016-19 : Completed <span class="primary-color">Graduate</span> in Environmental Science
+                            </li>
+                            <li>2019-21 : Masters in GIS and Remote Sensing [ ongoing ]</li>
+                        </ul>
+                        <h2 class="my-5">Working Experience</h2>
+                        <ul>
+                            <li>Freshers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills -->
     <!-- Front-end Skill -->
-    <div id="front-end">
-        <div class="f-heading">
-        <h1 class="m-heading py-1">Front-end Skills</h1>
+    <div id="skills" class="mb-5"></div>
+    <div class="container">
+        <div class="f-heading mt-2">
+            <div class="row">
+                <h1 class="mx-auto my-5">Skills</h1>
+            </div>
+            <div class="row box-wrapper">
+                <div class="col-md-6 box">
+                    <h3>Web Designed</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <li>CSS</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+                        </div>
+                        <li>JavaScript</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 100%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <li>Bootstarp</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="75"></div>
+                        </div>
+                    </ul>
+                    <h1>2018</h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="row my-5">
+                        <div class="col-8">
+                            <img src="./img/frontend2.png" alt="a" class="box-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row box-wrapper">
+                <div class="col-md-6 box desktop-left">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <li>MySQL</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+                        </div>
+                        <li>PostgreSQL</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+                        </div>
+                        <li>Laravel</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="80"></div>
+                        </div>
+                    </ul>
+                    <h1>2019</h1>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="row my-5">
+                        <div class="col-8">
+                            <img src="./img/backend.png" alt="a" class="box-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row box-wrapper">
+                <div class="col-md-6 box">
+                    <h3>Data Analysis & Spatial Data Visualization</h3>
+                    <ul>
+                        <li>R</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <li>Python</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+                        </div>
+                        <li>Leaflet and Spatial Data Mapping</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 100%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <li>Geoserver</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="75"></div>
+                        </div>
+                    </ul>
+                    <h1>2020</h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="row my-5">
+                        <div class="col-8">
+                            <img src="./img/dataanalysis.png" alt="a" class="box-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row box-wrapper">
+                <div class="col-md-6 box desktop-left">
+                    <h3>GIS and Image Processing Softwere</h3>
+                    <ul>
+                        <li>ArcGIS</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <li>QGIS</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+                        </div>
+                        <li>Erdass</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="60"></div>
+                        </div>
+                        <li>ENVI</li>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="60"></div>
+                        </div>
+                    </ul>
+                    <h1>2020</h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="row my-5">
+                        <div class="col-8">
+                            <img src="./img/gis.png" alt="a" class="box-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-        <div class="f-container p-1">
-        <div class="box1">
-            <img src="./img/html200.png">
-            <h1 class="m-heading">HTML5</h1>
-            <p>Know latest <span class="primary-color">HTML5</span> language.</p>
-        </div>
 
-        <div class="box2">
-            <img src="./img/css200.png">
-            <h1 class="m-heading">CSS3</h1>
-            <p>Know <span class="primary-color">FlexBox</span>, <span class="primary-color">Grid</span>, css animation, svg and more.</p>
-        </div>
+    <!-- Section: Contact -->
+    <section id="contact">
+        <div class="container">
+            <!-- Contact form -->
+            <div class="myform">
+                <h1 class="text-center my-5 p-3 bd-dark">Contact me</h1>
+                <div class="wrapper">
+                    <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSc5EG0vUrEk8XcceWJ_ZYISJ_lt0XYtyWmEuCvLDSpKcdBoMg/formResponse" target="_self" method="POST" id="mG61Hd">
+                        <div class="form-group">
+                            <input type="text" class="form-control ol" id="exampleInputEmail1" name="entry.438853460"
+                                placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control ol" id="exampleInputEmail2"
+                                aria-describedby="emailHelp" placeholder="Email" name="entry.1753947257" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control ol" id="phone" placeholder="Phone"
+                                name="entry.1772270157" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control ol" id="phone" placeholder="Message"
+                                name="entry.126569039" required></textarea>
+                        </div>
 
-        <div class="box3">
-            <img src="./img/js200.png">
-            <h1 class="m-heading">JAVASCRIPT</h1>
-            <p>Know latest javascript language. like- <span class="primary-color">ES6</span> and <span class="primary-color">jQuary</span></p>
-        </div>
-    </div>
-
- <!-- Projects -->
- <!-- <div id="projects">
-     <div class="p-heading">
-     <h1 class="m-heading py-1">Projects</h1>
-    </div>
-</div>
-    
-    
-     <div class="p-container p-1">
-        <div class="box1">
-            <img src="./img/html200.png">
-            <h1 class="m-heading center">HTML5</h1>
-            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestias.</p>
-        </div>
-
-        <div class="box2">
-            <img src="./img/css200.png">
-            <h1 class="m-heading center">CSS3</h1>
-            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestias.</p>
-        </div>
-
-        <div class="box3">
-            <img src="./img/js200.png">
-            <h1 class="m-heading center">JAVASCRIPT</h1>
-            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestias.</p>
-        </div>
-    </div> -->
- 
-<!-- Section: Contact -->
-  <section id="contact">
-      <div class="container">
-      <!-- Address -->
-      <div class="address p-2">
-            <h1 class="m-heading">Address :</h1>
-            <ul class="p-2">
-                <li>Rabindra Polli, Arambagh Link Road.</li>
-                <li>Arambagh, Hooghly, WB</li>
-                <li>Pin 712601</li>
-                <li>Contact Number: 8536975651</li>
-                <li>Contact Number: 7001653390</li>
-            </ul>
-        </div>
-        <!-- Contact form -->
-    <div class="contact-form bg-primary p-2">
-      <h2 class="m-heading">Contact Us</h2>
-      <p>Please use the form below to contact us</p>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Enter Name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter Email">
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
-        </div>
-        <input type="submit" value="Send" class="btn btn-dark">
-      </form>
-    </div>
-</div> 
-  </section>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <label for="golocate" class="text-danger">* Please Click on the Geolocate Button to get
+                                    your location. <mark>(No need to enter it mannualy)</mark></label>
+                                <br>
+                                <button type="button" onclick="getCoord()" class="btn mb-3">Geolocate</button>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control ol" id="lat" placeholder="Latitude [Optional]"
+                                    name="entry.685975588">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control ol" id="long"
+                                    placeholder="Longititude [Optional]" name="entry.18679720">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn mt-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+    </section>
 
 
 
 
- <!-- Footer -->
- <footer id="main-footer">
+    <!-- Footer -->
+    <footer id="main-footer">
         <div class="footer-content">
-          <h4>Copyright &copy; 2019. All Rights Reserved</h4>
-          <div class="social">
-            <a href="http://www.facebook.com/subhadip.ghorui.39" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="http://www.facebook.com/subhadip.ghorui.39" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="http://www.facebook.com/subhadip.ghorui.39" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="http://www.facebook.com/subhadip.ghorui.39" target="_blank"><i class="fab fa-linkedin"></i></a>         </div>
+            <h4>Copyright &copy; 2019. All Rights Reserved</h4>
+            <div class="social">
+                <a href="http://www.facebook.com/subhadip.ghorui.39" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://www.facebook.com/subhadip.ghorui.39" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="http://www.facebook.com/subhadip.ghorui.39" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="http://www.facebook.com/subhadip.ghorui.39" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
-      </footer>
+    </footer>
+
+    <!-- Js  -->
+    <script>
+        function getCoord() {
+            var lat = document.getElementById("lat");
+            var long = document.getElementById("long");
+            alert("Got Location");
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition((position) => {
+                        lat.value = position.coords.latitude;
+                        long.value = position.coords.longitude;
+                    });
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                }
+            }
+            getLocation();
+        }
+
+
+        // /////////////////////////////////////////////////////////////
+        // Add Box shadow on navbar on scroll
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+          
+                document.getElementById("navbar").className = "box-shadow";
+
+        }
+    </script>
 </body>
+
 </html>
