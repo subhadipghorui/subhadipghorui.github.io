@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Share Button.</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6e54032103.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .social-icons li {
+            padding: 1rem
+        }
+    </style>
 </head>
 <body>
     <!-- nav -->
@@ -18,6 +24,38 @@
             <h1 class="display-4" id="title">Hello, world!</h1>
             <p class="lead" id="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ex esse blanditiis! Fugit est nam, quasi unde odio fugiat eligendi. Eos accusantium natus modi, quisquam libero distinctio magnam sed omnis accusamus blanditiis id dolores aperiam quibusdam sapiente. Aut, hic? Nulla fugit velit in doloremque, voluptate mollitia consequatur architecto accusamus eligendi!</p>
             <p class="lead">
+                <div class="s-icons">
+                    <ul class="social-icons d-flex flex-direction-column flex-start" style="font-size: 2rem; list-style: none">
+                    <li> 
+                      <a href="#" id="gmail-btn"
+                        ><i class="fa fa-envelope-o" aria-hidden="true" style="color: #cf3e39"></i></a>
+                    </li>
+                    <li> 
+                      <a href="#" id="facebook-btn"
+                        ><i class="fa fa-facebook-square" aria-hidden="true" style="color: #3b5998"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" id="gplus-btn"
+                        ><i class="fa fa-google-plus-square" aria-hidden="true" style="color: #dd4b39"></i>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#" id="twitter-btn"
+                        ><i class="fa fa-twitter-square" aria-hidden="true" style="color: #1da1f2"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="linkedin-btn"
+                        ><i class="fa fa-linkedin-square" aria-hidden="true" style="color: #0077b5"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="whatsapp-btn"
+                        ><i class="fa fa-whatsapp" aria-hidden="true" style="color: #25d366"></i>
+                      </a>
+                    </li>
+                  </ul>     
+                </div>
               <button class="btn btn-primary btn-lg" href="#" role="button" id="shareBtn">Share</button>
             </p>
           </div>
@@ -28,10 +66,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
+        // //////////////////////////////////////////////
+      const facebookBtn = document.getElementById("facebook-btn");
+      const gplusBtn = document.getElementById("gplus-btn");
+      const twitterBtn = document.getElementById("twitter-btn");
+      const linkedinBtn = document.getElementById("linkedin-btn");
+      const whatsappBtn = document.getElementById("whatsapp-btn");
+      const gmailBtn = document.getElementById("gmail-btn");
+      const btnDiv = document.getElementById("btnDiv");
+      const iconsDiv = document.getElementById("iconDiv");
+
+        let postUrl = encodeURI(document.location.href);
+        let postTitle = encodeURI('Hello, world!');
+        
+        facebookBtn.setAttribute("href",`https://www.facebook.com/sharer.php?u=${postUrl}`);
+
+        twitterBtn.setAttribute("href", `https://twitter.com/share?url=${postUrl}&text=${postTitle}`);
+
+        linkedinBtn.setAttribute("href", `https://www.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}`);
+
+        whatsappBtn.setAttribute("href",`https://wa.me/?text=${postTitle} ${postUrl}`);
+        
+        gmailBtn.setAttribute("href",`https://mail.google.com/mail/?view=cm&su=${postTitle}&body=${postUrl}`);
+        gplusBtn.setAttribute("href",`https://plus.google.com/share?url=${postUrl}`);
+        // console.log('ss');
         // Share BTN
         const shareBtn = document.getElementById('shareBtn');
-        let postTitle = encodeURI(document.getElementById('title'));
-        let postUrl = encodeURI(window.location.href);
 
         shareBtn.addEventListener('click', ()=>{
           if(navigator.share){
